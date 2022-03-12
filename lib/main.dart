@@ -41,7 +41,22 @@ class HomeScreen extends StatelessWidget {
                   side: BorderSide(color: Colors.white, width: 2.0),
                   primary: Colors.white),
               onPressed: () {},
-              child: Text('ثبت نام'),
+              child: Text(
+                'ورود به حساب',
+                style: TextStyle(fontSize: 16),
+              ),
+            ),
+            TextButton(
+              style: TextButton.styleFrom(
+                primary: Colors.black,
+                backgroundColor: Colors.white,
+                minimumSize: Size(200.0, 40.0),
+              ),
+              onPressed: () {},
+              child: Text(
+                'ثبت نام',
+                style: TextStyle(fontSize: 16),
+              ),
             )
           ],
         ),
