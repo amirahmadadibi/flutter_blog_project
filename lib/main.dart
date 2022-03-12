@@ -29,9 +29,22 @@ class HomeScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text(
-                'خوش‌آمدید',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
+              SizedBox(
+                height: 20,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    'خوش‌آمدید',
+                    style:
+                        TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
+                  ),
+                  SizedBox(
+                    width: 14,
+                  ),
+                  Icon(Icons.login),
+                ],
               ),
               Image(
                 image: AssetImage('images/welcome.png'),
