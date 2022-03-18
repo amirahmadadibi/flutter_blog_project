@@ -60,17 +60,11 @@ class HomeScreen extends StatelessWidget {
                   style: TextStyle(fontSize: 16),
                 ),
               ),
-              TextButton(
-                style: TextButton.styleFrom(
-                  primary: Colors.black,
-                  backgroundColor: Colors.white,
-                  minimumSize: Size(200.0, 40.0),
-                ),
+              ElevatedButton(
                 onPressed: () {},
-                child: Text(
-                  'ثبت نام',
-                  style: TextStyle(fontSize: 16),
-                ),
+                child: Text('ثبت نام'),
+                style: ElevatedButton.styleFrom(
+                    primary: Colors.black, minimumSize: Size(200.0, 43.0)),
               )
             ],
           ),
