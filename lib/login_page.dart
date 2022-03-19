@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'blog_page.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -37,7 +38,15 @@ class LoginPage extends StatelessWidget {
                     minimumSize: Size(200.0, 40.0),
                     side: BorderSide(color: Colors.white, width: 2.0),
                     primary: Colors.white),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (BuildContext context) {
+                        return BlogScreen();
+                      },
+                    ),
+                  );
+                },
                 child: Text(
                   'ورود به حساب',
                   style: TextStyle(fontSize: 16),
