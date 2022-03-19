@@ -4,6 +4,16 @@ import 'blog_page.dart';
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
 
+  void navigateToBlogPage(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (BuildContext context) {
+          return BlogScreen();
+        },
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,13 +49,7 @@ class LoginPage extends StatelessWidget {
                     side: BorderSide(color: Colors.white, width: 2.0),
                     primary: Colors.white),
                 onPressed: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (BuildContext context) {
-                        return BlogScreen();
-                      },
-                    ),
-                  );
+                  navigateToBlogPage(context);
                 },
                 child: Text(
                   'ورود به حساب',
