@@ -19,7 +19,15 @@ class BlogScreen extends StatelessWidget {
       ),
       body: SafeArea(
         child: Center(
-          child: Text('SecondScreen'),
+          child: Padding(
+            padding: EdgeInsets.all(10),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(6),
+              child: Image(
+                image: AssetImage('images/s.png'),
+              ),
+            ),
+          ),
         ),
       ),
     );
