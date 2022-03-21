@@ -20,12 +20,49 @@ class BlogScreen extends StatelessWidget {
       body: SafeArea(
         child: Center(
           child: Padding(
-            padding: EdgeInsets.all(10),
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(6),
-              child: Image(
-                image: AssetImage('images/s.png'),
-              ),
+            padding: EdgeInsets.all(20),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(6),
+                  child: Image(
+                    image: AssetImage('images/s.png'),
+                  ),
+                ),
+                Text(
+                  'برای ۱۴ آبان SafeMoon : سینگنال خرید   ',
+                  textAlign: TextAlign.end,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Text(
+                      'قیمت : ۱۲،۳۴۵',
+                      textAlign: TextAlign.end,
+                      style: TextStyle(color: Colors.green),
+                    ),
+                    Icon(
+                      Icons.attach_money,
+                      color: Colors.green,
+                      size: 20,
+                    ),
+                    SizedBox(
+                      width: 40,
+                    ),
+                    Text(
+                      'قیمت : ۱۲،۵۶۰',
+                      textAlign: TextAlign.end,
+                      style: TextStyle(color: Colors.red),
+                    ),
+                    Icon(
+                      Icons.attach_money,
+                      color: Colors.red,
+                      size: 20,
+                    )
+                  ],
+                )
+              ],
             ),
           ),
         ),
