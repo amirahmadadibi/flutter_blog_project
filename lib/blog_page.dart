@@ -20,9 +20,9 @@ class BlogScreen extends StatelessWidget {
       body: SafeArea(
         child: Center(
           child: Padding(
-            padding: EdgeInsets.all(20),
+            padding: EdgeInsets.all(8),
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.end,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 ClipRRect(
                   borderRadius: BorderRadius.circular(6),
@@ -30,36 +30,50 @@ class BlogScreen extends StatelessWidget {
                     image: AssetImage('images/s.png'),
                   ),
                 ),
+                SizedBox(
+                  height: 10,
+                ),
                 Text(
                   'برای ۱۴ آبان SafeMoon : سینگنال خرید   ',
-                  textAlign: TextAlign.end,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16,
+                  ),
+                ),
+                SizedBox(
+                  height: 10,
                 ),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      'قیمت : ۱۲،۳۴۵',
-                      textAlign: TextAlign.end,
-                      style: TextStyle(color: Colors.green),
-                    ),
-                    Icon(
-                      Icons.attach_money,
-                      color: Colors.green,
-                      size: 20,
-                    ),
-                    SizedBox(
-                      width: 40,
-                    ),
-                    Text(
-                      'قیمت : ۱۲،۵۶۰',
-                      textAlign: TextAlign.end,
+                      'فروش روی : ۱۲،۵۶۰',
                       style: TextStyle(color: Colors.red),
                     ),
+                    SizedBox(
+                      width: 10,
+                    ),
                     Icon(
-                      Icons.attach_money,
+                      Icons.price_check,
+                      size: 25,
                       color: Colors.red,
+                    ),
+                    SizedBox(
+                      width: 20,
+                    ),
+                    Text(
+                      'خرید روی : ۱۲،۳۶۵',
+                      style: TextStyle(color: Colors.green),
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Icon(
+                      Icons.sell,
                       size: 20,
-                    )
+                      color: Colors.green,
+                    ),
                   ],
                 )
               ],
