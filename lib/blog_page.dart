@@ -194,6 +194,20 @@ class BlogScreen extends StatelessWidget {
                         color: Colors.green,
                       ),
                     ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  TextButton(
+                    style: TextButton.styleFrom(primary: Colors.red),
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    child: Text(
+                      'خروج از حساب',
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                    ),
                   )
                 ],
               ),
